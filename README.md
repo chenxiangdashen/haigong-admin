@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 基于react+antd的后台框架
 github地址：[基于react+antd的后台框架](https://github.com/xjc-opensource/react-admin-example)  
 预览地址：[预览地址](https://xjc-opensource.github.io/react-admin-example/)
