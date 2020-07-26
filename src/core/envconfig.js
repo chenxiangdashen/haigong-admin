@@ -1,5 +1,7 @@
 const target = process.env.NODE_ENV;
 
+console.log(target)
+
 let envParams = {
 };
 
@@ -21,7 +23,8 @@ if (target === 'development') {
     //开发
     envParams = {
         ENV_TITLE: "dev"
-        ,API_ROOT: "http://127.0.0.1:6300/opensource-web910/api/v1"
+        // ,API_ROOT: "http://localhost:8080"
+        ,API_ROOT: "/"
         ,TEST_USERNAME: "admin"
         ,TEST_PASSWORD: "123456"
         ,TEST_CAPRCHA: "666666"

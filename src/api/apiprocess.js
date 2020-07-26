@@ -27,6 +27,7 @@ function processNoAuth(){
 
 function getDefaultHeader(config) {
     config.headers['x-access-token'] = Session.getUserToken();
+    config.headers['Content-Type'] = 'application/x-www-form-urlencoded';
     config.headers['x-access-type'] = 'web';
     config.headers['x-access-systemcode'] = Session.getSystemInfo().systemCode ;
     config.headers['x-access-loginflag'] = Session.getSystemInfo().loginFlag;

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Form, Icon, Input, Button, Checkbox} from 'antd';
 import Md5 from 'js-md5';
+import qs from 'qs';
 import Api from '../../api/api';
 import Session from '../../core/session';
 import './login.scss';
@@ -95,7 +96,7 @@ class Login extends React.Component {
     loginEvent(data) {
         let loginParams = {
             username: data.username,
-            password: Md5(data.userpassword),
+            password: data.userpassword,
             uuid: '',
             captcha: '',
             loginFlag: 1,
@@ -104,7 +105,7 @@ class Login extends React.Component {
         Session.setSystemInfo("1","1");
 
         this.setState({loading: true});
-        Api.postUrl(Api.Url.USER.LOGIN, loginParams).then(res => {
+        Api.postUrl(Api.Url.USER.LOGIN, qs.stringify(loginParams)).then(res => {
             this.setState({loading: false});
             if ((res.data)) {
 

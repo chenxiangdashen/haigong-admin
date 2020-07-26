@@ -54,6 +54,7 @@
     "postcss-normalize": "7.0.1",
     "postcss-preset-env": "6.6.0",
     "postcss-safe-parser": "4.0.1",
+    "qs": "^6.9.4",
     "react": "^16.8.6",
     "react-app-polyfill": "^1.0.1",
     "react-dev-utils": "^9.0.1",
@@ -149,5 +150,6 @@
     "@babel/plugin-proposal-decorators": "^7.4.4",
     "babel-plugin-import": "^1.12.0",
     "core-decorators": "^0.20.0"
-  }
+  },
+  "proxy": "http://localhost:8080"
 }

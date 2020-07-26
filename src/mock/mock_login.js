@@ -5,7 +5,7 @@ const LoginUsers = [
         id: 1
         , userId: 1
         , username: 'admin'
-        , password: 'e10adc3949ba59abbe56e057f20f883e'
+        , password: '123456'
         , avatar: ''
         , aliasname: 'mockjs'
         , tokenId: 'xx'
